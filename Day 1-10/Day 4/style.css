@@ -1,0 +1,30 @@
+body {
+  background-color: #000000;
+}
+#logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 250px;
+  border-radius: 50px;
+  border-width: thin;
+  border-style: hidden;
+  background-color: red;
+}
+#play {
+  position: absolute;
+top:46%;
+left: 50%;
+transform: translate(-50%, -50%);
+ border-top: 50px solid transparent;
+ border-bottom: 50px solid transparent;
+ border-left: 75px solid white;
+ animation: 10s spin infinite;
+}
+#logo:hover {
+  width: 500px;
+  height: 350px;
+  transition: 3s;
+}
