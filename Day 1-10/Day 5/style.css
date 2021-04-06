@@ -1,0 +1,151 @@
+body {
+  background-color: black;
+}
+#loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  float: left;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+}
+.ball {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+#ball1{
+  position: relative;
+  left: 30%;
+  animation: 5s bounce;
+  opacity: 0.0;
+  background-color: red;
+}
+#ball2{
+  position: relative;
+  left: 30%;
+  animation: 5s bounce;
+  opacity: 0.0;
+  background-color: blue;
+  animation-delay: 1s;
+}
+#ball3{
+  position: relative;
+  left: 30%;
+  animation: 5s bounce;
+  opacity: 0.0;
+  background-color: green;
+    animation-delay: 2s;
+}
+#ball4{
+  position: relative;
+  left: 30%;
+  animation: 5s bounce;
+  opacity: 0.0;
+  background-color: yellow;
+    animation-delay: 3s;
+}
+#ball5{
+  position: relative;
+  left: 30%;
+  animation: 5s bounce;
+  opacity: 0.0;
+  background-color: white;
+    animation-delay: 4s;
+}
+#ball6{
+  position: relative;
+  left: 30%;
+  animation: 5s bounce;
+  opacity: 0.0;
+  background-color: gold;
+    animation-delay: 5s;
+}
+#ball7{
+  position: relative;
+  left: 30%;
+  animation: 5s bounce;
+  opacity: 0.0;
+  background-color: orange;
+  animation-delay: 6s;
+}
+@keyframes bounce {
+    0% {
+      top: 50%;
+      opacity: 1.0;
+    }
+    50% {
+      top: 10%;
+      opacity: 1.0;
+    }
+    100% {
+      top: 50%;
+      opacity: 0.0;
+    }
+}
+#loading-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  font-family: Arial, sans-serif;
+  font-weight: lighter;
+  font-size: 64px;
+  color: #fff;
+}
+#title1 {
+  position: relative;
+  left: 30%;
+  opacity: 1.0;
+  animation: 4s show;
+}
+#title2 {
+  position: relative;
+  left: 30%;
+  opacity: 1.0;
+  animation: 5s show;
+}
+#title3 {
+  position: relative;
+  left: 30%;
+  opacity: 1.0;
+  animation: 6s show;
+}
+#title4 {
+  position: relative;
+  left: 30%;
+  opacity: 1.0;
+  animation: 7s show;
+}
+#title5 {
+  position: relative;
+  left: 30%;
+  opacity: 1.0;
+  animation: 8s show;
+}
+#title6 {
+  position: relative;
+  left: 30%;
+  opacity: 1.0;
+  animation: 9s show;
+}
+#title7 {
+  position: relative;
+  left: 30%;
+  opacity: 1.0;
+  animation: 10s show;
+}
+@keyframes show {
+  0% {
+    opacity: 0.0;
+  }
+  99% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
