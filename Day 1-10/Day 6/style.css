@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+}
+.picross-grid {
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 26%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  border-color: #000;
+  border-style: solid;
+
+}
+.picross-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  border-radius: 3px;
+  border-color: black;
+  width: 1260px;
+  height: 700px;
+
+}
+.picross {
+  border-color: #000;
+  border-style: solid;
+  border-width: thin;
+}
+.picross:hover {
+  transition: 0.2s;
+  background-color: #7823ff;
+}
+.picross-column {
+  position: absolute;
+  top: 12.5%;
+  left: 26%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+    width: 400px;
+    text-align: center;
+}
+.picross-num-row, .picross-num-row-dark {
+  width: 80px;
+  height: 120px;
+}
+.picross-num-row {
+  background-color: #fff;
+}
+.picross-num-row-dark {
+  background-color: #d9d9d9;
+}
+.picross-column-num, .picross-column-num-dark {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 120px;
+  height: 80px;
+  background-color: white;
+}
+.picross-column-num {
+  background-color: #fff;
+}
+.picross-column-num-dark {
+  background-color: #d9d9d9;
+}
+.picross-row {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+      text-align: center;
+}
+.picross-info {
+    position: absolute;
+    top: 90%;
+    left: 18%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    font-size: 96px;
+}
+.picross-info-sub {
+  position: absolute;
+  top: 50%;
+  left: 68%;
+  transform: translate(-50%, -50%);
+}
