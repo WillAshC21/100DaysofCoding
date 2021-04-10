@@ -1,0 +1,36 @@
+body {
+  background-color: black;
+}
+#ship {
+  position: absolute;
+top:70%;
+left: 50%;
+transform: translate(-50%, -50%);
+ border-left: 90px solid transparent;
+ border-right: 90px solid transparent;
+
+ border-bottom: 125px solid white;
+}
+
+#bullet {
+  position: absolute;
+top:60%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: transparent;
+width: 10px;
+height: 30px;
+animation: float 3s;
+}
+@keyframes float {
+  0% {
+    top: 60%;
+    background-color: white;
+  }
+  99% {
+        background-color: white;
+  }
+  100% {
+    top: 0%;
+  }
+}
