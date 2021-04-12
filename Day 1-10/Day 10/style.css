@@ -1,0 +1,183 @@
+body {
+  background-color: black;
+}
+#ship {
+  position: absolute;
+top:45%;
+left: 50%;
+transform: translate(-50%, -50%);
+ border-left: 60px solid transparent;
+ border-right: 60px solid transparent;
+
+ border-bottom: 95px solid white;
+  animation: 25s twist;
+}
+@keyframes twist{
+  20% {
+    transform: rotateZ(45deg);
+  }
+  40% {
+    transform: rotateZ(135deg);
+  }
+  60% {
+    transform: rotateZ(225deg);
+  }
+  80% {
+    transform: rotateZ(315deg);
+  }
+  100% {
+    transform: rotateZ(135deg);
+  }
+}
+#bullet1 {
+  position: absolute;
+top:60%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: transparent;
+width: 10px;
+height: 30px;
+animation: float 3s;
+animation-delay: 4s;
+transform: rotate(45deg);
+}
+#bullet2 {
+  position: absolute;
+top:60%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: transparent;
+width: 10px;
+height: 30px;
+animation: float2 3s;
+animation-delay: 8s;
+transform: rotate(135deg);
+}
+#bullet3 {
+  position: absolute;
+top:60%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: transparent;
+width: 10px;
+height: 30px;
+animation: float3 3s;
+animation-delay: 4s;
+transform: rotate(225deg);
+}
+#bullet4 {
+  position: absolute;
+top:60%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: transparent;
+width: 10px;
+height: 30px;
+animation: float4 3s;
+animation-delay: 4s;
+transform: rotate(315deg);
+}
+#enemy1 {
+  position: absolute;
+top:10%;
+left: 20%;
+transform: translate(-50%, -50%);
+background-color: blue;
+width: 50px;
+height: 50px;
+}
+#enemy2 {
+  position: absolute;
+top:10%;
+left: 80%;
+transform: translate(-50%, -50%);
+background-color: transparent;
+width: 50px;
+height: 50px;
+animation: gone 8s;
+}
+#enemy3 {
+  position: absolute;
+top:80%;
+left: 20%;
+transform: translate(-50%, -50%);
+background-color: blue;
+width: 50px;
+height: 50px;
+}
+#enemy4 {
+  position: absolute;
+top:80%;
+left: 80%;
+transform: translate(-50%, -50%);
+background-color: blue;
+width: 50px;
+height: 50px;
+}
+@keyframes float {
+  0% {
+    top: 60%;
+    left: 50%;
+    background-color: white;
+  }
+  99% {
+        background-color: white;
+  }
+  100% {
+    top: 10%;
+    left: 80%;
+  }
+}
+@keyframes float2 {
+  0% {
+    top: 60%;
+    left: 50%;
+    background-color: white;
+  }
+  99% {
+        background-color: white;
+  }
+  100% {
+    top: 80%;
+    left: 80%;
+  }
+}
+@keyframes float3 {
+  0% {
+    top: 60%;
+    left: 50%;
+    background-color: white;
+  }
+  99% {
+        background-color: white;
+  }
+  100% {
+    top: 80%;
+    left: 20%;
+  }
+}
+@keyframes float4 {
+  0% {
+    top: 60%;
+    left: 50%;
+    background-color: white;
+  }
+  99% {
+        background-color: white;
+  }
+  100% {
+    top: 10%;
+    left: 20%;
+  }
+}
+@keyframes gone {
+  0% {
+    background-color: blue;
+  }
+  99% {
+        background-color: blue;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
